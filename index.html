@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VillainsRadar</title>
+    <link rel="stylesheet" type="text/css" href="./css/styles.css">
+    <script src="app.js" defer></script>
+</head>
+
+<body>
+    <div id="loader">
+        <img src="./img/loadv.gif" alt="Carregando...">
+    </div>
+    <header>
+        <h1>VILLAINS - RADAR</h1>
+    </header>
+    <main>
+
+        
+        <div class="linha"></div>
+        <nav>
+            <div class="icones" id="icones">
+                <div class="heroi layout" id="heroeslayout">
+                    <img class="TIcones" id="heroes" src="./img/heroes.png" alt="">
+                    <h2>HEROES</h2>
+                </div>
+                <div class="vilao layout" id="villainslayout">
+                    <img class="TIcones"  id="villains" src="./img/radar.png" alt="">
+                    <h2>SUPER-RADAR</h2>
+                </div>
+                <div class="antheroi layout" id="antiheroeslayout">
+                    <img class="TIcones" id="antiheroes" src="./img/antiheroes.jpg" alt="">
+                    <h2>ANTIHEROES</h2>
+                </div>
+            </div>
+            <div id="search-box">
+                <input type="text" id="search-input" placeholder="Digite o nome do personagem">
+                
+                <!-- <button id="search-button">Pesquisar</button> -->
+            </div>
+            <img class="botao-imagem" id="botao-imagem" src="./img/deadpool.png" alt="">
+        </nav>
+        <div class="demonstracao" id="demonstracao">
+            
+           
+            <div class="personagens" id="personagens">
+              
+                <div id="hero-container">
+                </div>
+            </div>
+            <div class="info_personagens" id="info_personagens"></div>
+
+
+        </div>
+    </main>
+</body>
+</html>

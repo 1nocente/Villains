@@ -1,0 +1,343 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: #250101;
+    overflow-y: scroll;
+    overflow-x: hidden;
+
+}
+
+header{
+    background-color: #360101;
+    border-radius: 0px 0px 20px 20px;
+    height: 10%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header h1 {
+    font-size: 665%;
+    color: white;
+    font-weight: lighter;
+    letter-spacing: 1%;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    gap: 5%;
+}
+
+
+.linha{
+    width: 100%;
+    height: 1%;
+    background-color: #9b9b9b;
+    bottom: 34%;
+    display: block;
+}
+
+nav{
+    height: 1%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 3%;
+}
+
+.icones {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10%;
+}
+
+.TIcones{
+    height: 22vh;
+    border-radius: 360px;
+}
+
+.layout{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: .5%;
+    height: 10%;
+}
+
+h2{
+    font-size: 1%;
+    letter-spacing: 1%;
+    color: white;
+    font-weight: lighter;
+}
+
+.pesquisa{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.pesquisa input{
+    height: 5vh;
+    width:50vw;
+}
+.pesquisa img{
+    height: 10vh;
+    border-radius: 360px;
+}
+
+.demonstracao{
+    width: 100vw;
+    height: 50vh;
+    display: flex;
+    flex-direction: row;
+    gap: 1%;
+}
+
+.personagens{
+    height: 250%;
+    width: 70vw;
+    flex-direction: row;
+     gap: 5%;
+    overflow: auto;
+
+}
+
+
+
+@font-face {
+    font-family: 'Star Guard';
+    src: url('./fonts/starguardcondital.otf') format('truetype'); /* Substitua o caminho pelo caminho correto para o arquivo de fonte */
+}
+
+/* Aplicar a fonte aos elementos h1 e h2 */
+h1, h2 {
+    font-family: 'Star Guard', sans-serif; /* Use o nome da fonte definido em @font-face */
+    /* Outras propriedades de estilo para h1 e h2 */
+    color: whitesmoke;
+    font-size: 300%;
+    letter-spacing: 1rem;
+    font-weight: lighter;
+    margin: 1%;
+}
+
+.imagem{
+    background-color: #1f1f1f;
+    height: 11%;
+    width: 1%;
+    margin: 1rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #1f1f1f;
+}
+
+
+.hero-image {
+    width: 13%;
+    height: 19%;
+    margin: 1.2%;
+    flex-direction: row;
+    border: 5px outset rgb(145, 4, 4);
+    border-radius: 20px;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+  
+    &:hover {
+      transform: scale(1.1);
+    }
+}
+
+#hero-container {
+    display: flex; /* Crie um layout em linha para os heróis */
+    flex-wrap: wrap-reverse
+    
+}.hero-name {
+    font-size: 300%;
+    letter-spacing: 1%;
+    color: white;
+    font-weight: lighter;
+}
+
+.section-title {
+    font-size: 300%;
+    letter-spacing: 1rem;
+    color: goldenrod;
+    font-weight: lighter;
+}
+
+.powerstats-list {
+    font-size: 5%;
+    letter-spacing: 1%;
+    color: white;
+    font-weight: lighter;
+}
+
+.powerstat-item {
+    font-size: 3000%;
+    letter-spacing: 1rem;
+    color: white;
+    font-weight: lighter;
+}
+
+.botao-imagem {
+    width: 150px; /* Ajuste a largura e altura conforme necessário */
+    height: 100px;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+    position: inherit;
+    margin-left: -300px;
+
+  }
+  
+  .botao-imagem:hover {
+    transform: scale(1.2); /* Ajuste o valor conforme necessário para a escala desejada */
+  }
+  
+  /* Estilo da barra de rolagem */
+div::-webkit-scrollbar {
+    width: 15px;
+  }
+  
+  /* Estilo da área da barra de rolagem (track) */
+  div::-webkit-scrollbar-track {
+    background-color: #1f1f1f00;
+  }
+  
+  /* Estilo do polegar (thumb) da barra de rolagem */
+  div::-webkit-scrollbar-thumb {
+    background-color: #838383;
+    border-radius: 6px;
+  }
+  
+  /* Cor do texto nos botões de seta (opcional) */
+  div::-webkit-scrollbar-button {
+    background-color: #f1003400;
+  }
+  
+  /* Estilo quando a barra de rolagem está focada (opcional) */
+  div::-webkit-scrollbar-thumb:focus {
+    background-color: #7a05b1;
+  }
+  
+  .imgSearch{
+    background-color: #1f1f1f;
+    height: 500px;
+    width: 500px;
+    margin: 1rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  p{
+    font-size: 3rem;
+    letter-spacing: 1rem;
+    color: goldenrod;
+    font-weight: bold;
+    margin: 1%;
+  }
+
+ 
+
+  #search-input{
+    
+    width: 200%;
+    height: 200%;
+    font-size: 22px; 
+    padding: 0px 0px 0px 12px;
+  }
+
+   #search-box{
+    width: 10%;
+    height: 10%;
+    margin: -100%;
+   }
+
+
+
+   .TIcones{
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+  
+    &:hover {
+      transform: scale(1.150);
+    }
+   }
+
+   .character-card {
+    margin: 10px;
+    text-align: center;
+}
+
+.character-card img {
+    max-width: 200px;
+}
+
+.character-card p {
+    margin: 5px;
+}
+
+.borda{
+    height: 100%;
+    border: 10px outset rgb(145, 4, 4);
+    border-radius: 20px;
+    margin-left: 100px; 
+}
+
+.hero-info{
+    margin-left: 80px;
+}
+
+.heroes{
+    height: .6vh;
+    width: .4vw;
+}
+
+.heroi{
+    width: 10vw;
+    height: 10vh;
+    margin-top: -22%;
+}
+
+.vilao{
+    width: 10vw;
+    height: 10vh;
+    margin-top: -22%;
+}
+
+.antheroi{
+width: 30%;
+} 
+
+        /* CSS para tela de carregamento */
+        #loader {
+            margin-top: 10%;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: #250101;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 9999;
+            overflow: hidden;
+        }
+        #loader img {
+            width: 20%; /* Ajuste o tamanho do GIF conforme necessário */
+            height: 20%;
+        }
