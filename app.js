@@ -19,6 +19,11 @@ document.getElementById("villains").addEventListener("click", function () {
     window.location.href = "https://1nocente.github.io/SUPER-RADAR/";
 });
 
+document.getElementById("antiheroes").addEventListener("click", function () {
+    window.location.href = "https://1nocente.github.io/AntiHeroes/";
+});
+
+
 
 setTimeout(removeLoader, 3000);
 
@@ -33,7 +38,7 @@ async function fetchHeroInfo(id) {
         }
         const data = await response.json();
 
-        if (data.biography.alignment === "good") {
+        if (data.biography.alignment === "bad") {
         // Crie um elemento de imagem
         const heroImage = document.createElement("img");
         heroImage.src = data.image.url;
